@@ -107,3 +107,23 @@ let pessoa = {
 console.log("Meu nome é " + pessoa.nome)
 console.log("Minha idade é " + pessoa. idade + " anos")
 console.log("Moro na " + pessoa.endereco.rua + ", numero: " + pessoa.endereco.numero)
+
+// uma concessionaria tem CNPJ e endereço.
+// ela possui um carro em estoque. Ele tem marca, modelo e ano de fabricação
+
+let concessionaria = {
+    cnpj: 934843984,
+    endereco: {
+        rua: "Rua Maravilha",
+        numero: 344
+    },
+    carros:{
+        marca: "BMW",
+        modelo: "X7",
+        anpfabric: "2020"
+    }
+
+}
+
+
+
