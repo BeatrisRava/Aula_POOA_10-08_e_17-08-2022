@@ -112,7 +112,7 @@ console.log("Moro na " + pessoa.endereco.rua + ", numero: " + pessoa.endereco.nu
 // ela possui um carro em estoque. Ele tem marca, modelo e ano de fabricação
 
 let concessionaria = {
-    cnpj: 934843984,
+    cnpj: "93.484.398/0001-21",
     endereco: {
         rua: "Rua Maravilha",
         numero: 344
