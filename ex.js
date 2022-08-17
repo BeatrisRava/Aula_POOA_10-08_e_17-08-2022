@@ -1,12 +1,12 @@
 // aula 02 - 17/08
 
 //definiçao da funçao 
-function oi(){
-    console.log("OIE!")
-}
+// function oi(){
+//     console.log("OIE!")
+// }
 
-// essa é a chamada da função 
-oi()
+// // essa é a chamada da função 
+// oi()
 
 //exemplo
 // function soma (a,b){
@@ -34,7 +34,7 @@ oi()
 // console.log(triplo("abc")); // resulta nan
 
 //arrow function
-const hello = () => console.log("hello")
+//const hello = () => console.log("hello")
 
 //const dobro = (valor) => valor * 2
 
@@ -45,14 +45,25 @@ const hello = () => console.log("hello")
 // console.log(DevolveUmValor())
 // console.log(DevolveUmValor)
 
-let umaFuncao = function (){
-    console.log('Fui armazenada em uma variavel')
-}
-
-umaFuncao()
+//  let umaFuncao = function (){
+//      console.log('Fui armazenada em uma variavel')
+//  }
+//  umaFuncao()
 
 //função de alta ordem pois recebe funçoes como paramentro
 function f (funcao) {
     //callable
     funcao()
 }
+
+//função de alta ordem pois recebe funçoes como paramentro
+function g(){
+    function outraFuncao(){
+        console.log("Fui criado por G")
+    }
+    return outraFuncao
+}
+const gResult = g()
+
+// console.log(gResult)
+//gResult() ou g()() para chamar a função
