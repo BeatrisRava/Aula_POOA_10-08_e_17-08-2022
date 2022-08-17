@@ -50,20 +50,60 @@
 //  }
 //  umaFuncao()
 
-//função de alta ordem pois recebe funçoes como paramentro
-function f (funcao) {
-    //callable
-    funcao()
-}
+// //função de alta ordem pois recebe funçoes como paramentro
+// function f (funcao) {
+//     //callable
+//     funcao()
+// }
 
-//função de alta ordem pois recebe funçoes como paramentro
-function g(){
-    function outraFuncao(){
-        console.log("Fui criado por G")
+
+// //função de alta ordem pois recebe funçoes como paramentro
+// function g(){
+//     function outraFuncao(){
+//         console.log("Fui criado por G")
+//     }
+//     return outraFuncao
+// }
+// const gResult = g()
+
+// f(g)
+// f(g())                                         
+
+// // console.log(gResult)
+// //gResult() ou g()() para chamar a função
+
+// function f() {
+//      let nome = "Ana"
+//      function f(){
+//         console.log(nome)
+//      }
+//      g()
+// }
+// f()
+
+
+// uma pessoa que se chama joao e que tem 17 anos
+// let pessoa = {
+//     nome: "Joao",
+//     idade: 17
+// }
+
+// //console.log(pessoa)
+// console.log("Meu nome é " + pessoa.nome)
+// console.log("Minha idade é " + pessoa. idade + " anos")
+
+// uma pessoa que se chama maria, tem 21 anos e mora na rua b, numero 121
+let pessoa = {
+    nome: "Maria",
+    idade: 21,
+    //objeto de JSON alinhado
+    endereco: {
+        rua: "Rua b",
+        numero: 121
     }
-    return outraFuncao
 }
-const gResult = g()
 
-// console.log(gResult)
-//gResult() ou g()() para chamar a função
+//console.log(pessoa)
+console.log("Meu nome é " + pessoa.nome)
+console.log("Minha idade é " + pessoa. idade + " anos")
+console.log("Moro na " + pessoa.endereco.rua + ", numero: " + pessoa.endereco.numero)
