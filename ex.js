@@ -41,8 +41,18 @@ const hello = () => console.log("hello")
 // const exibeoi = nome => console.log('Oi, ${nome}')
 // exibeoi('Renata')
 
-const DevolveUmValor = () => 3
-console.log(DevolveUmValor())
-console.log(DevolveUmValor)
+// const DevolveUmValor = () => 3
+// console.log(DevolveUmValor())
+// console.log(DevolveUmValor)
 
+let umaFuncao = function (){
+    console.log('Fui armazenada em uma variavel')
+}
 
+umaFuncao()
+
+//função de alta ordem pois recebe funçoes como paramentro
+function f (funcao) {
+    //callable
+    funcao()
+}
